@@ -1,2 +1,7 @@
-all:
-	gcc main.c -o libcamera-gstreamer `pkg-config --cflags --libs gstreamer-1.0`
+all: singlestream multistream
+
+singlestream: 
+	gcc singlestream.c -o libcamera-gstreamer-singlestream `pkg-config --cflags --libs gstreamer-1.0`
+
+multistream:
+	gcc multistream.c -o libcamera-gstreamer-multistream `pkg-config --cflags --libs gstreamer-1.0`

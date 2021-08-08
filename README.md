@@ -9,6 +9,7 @@ This repository has example code to use libcamera's gstreamer element.
 ## Usage
 
 ```
-make
-./libcamera-gstreamer
+make all
+./libcamera-gstreamer-singlestream
+./libcamera-gstreamer-multistream
 ```
